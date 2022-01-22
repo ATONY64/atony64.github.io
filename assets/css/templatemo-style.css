@@ -13,7 +13,7 @@ body {
 }
 
 #page-wraper {
-    background: url(../images/page-bg.jpg) center center fixed;
+    background: url(../images/page-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -126,7 +126,7 @@ html {
 .main-nav li:hover a,
 .main-nav li.active a {
     background: #fff;
-    color: #000000;
+    color: #8c363e;
 }
 
 /* Sidebar Menu */
@@ -178,7 +178,7 @@ html {
 
 .menu .social-network ul li a:hover {
     background-color: #fff;
-    color: #000000;
+    color: #a43f49;
 }
 
 .menu .copyright-text {
@@ -223,7 +223,7 @@ html {
     left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
-  background-color: #3689d6;
+  background-color: #a43f49;
   box-sizing: border-box;
   height: 100vh;  
   max-height: 100vh !important;
@@ -255,7 +255,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    color: #3689d6;
+    color: #a43f49;
     background-color: #fff;
     width: 60px;
     height: 60px;
@@ -271,7 +271,7 @@ html {
 #menu-close {
     cursor: pointer;
     text-align: right;
-    color: #3689d6;
+    color: #a43f49;
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -289,6 +289,8 @@ html {
     right: 10%;
     left: 35%;
     position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
 
@@ -306,7 +308,7 @@ html {
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
-    background-color: #3689d6;
+    background-color: #a43f49;
     margin: 10px auto;
 }
 
@@ -323,8 +325,8 @@ html {
 .white-button a {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #3689d6;
-    color: #ffffff;
+    background-color: #fff;
+    color: #a43f49;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -333,8 +335,8 @@ html {
 }
 
 .white-button a:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #a43f49;
+    color: #fff;
 }
 
 button {
@@ -422,10 +424,6 @@ button:hover {
     color: #4a4a4a;
 }
 
-.service-item:hover ul li {
-    color: #4a4a4a;
-}
-
 .service-item .service-icon {
     width: 70px;
     height: 70px;
@@ -473,7 +471,7 @@ button:hover {
 
 section.my-work .section-heading {
     text-align: center;
-    padding: 80px 45px 1px 45px;
+    padding: 80px 45px 50px 45px;
 }
 
 .isotope-wrapper {
@@ -524,18 +522,19 @@ section.my-work .section-heading {
 
 .isotope-item {
     position: relative;
+    width: 48%;
     margin: 1%;
     border-bottom: 2px solid rgba(250,250,250,0.1);
     padding-bottom: 30px;
     margin-bottom: 30px;
-    
 }
 
 .isotope-item img {
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
-    
 }
 
 .lazyload {
