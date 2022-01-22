@@ -50,6 +50,9 @@
 
   $(".isotope-wrapper").each(function() {
     var $isotope = $(".isotope-box", this);
+    $isotope.imagesLoaded().progress( function() {
+      $isotope.isotope('layout');
+    });
     var $filterCheckboxes = $('input[type="radio"]', this);
 
     var filter = function() {
