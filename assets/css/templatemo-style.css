@@ -222,7 +222,6 @@ html {
 .menu {
     left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  transition: 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
   background-color: #3689d6;
   box-sizing: border-box;
@@ -492,7 +491,7 @@ section.my-work .section-heading {
     display: inline-block;
     margin-right: 15px;
     padding-bottom: 3px;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 700;
     border-bottom: 2px solid transparent;
     transform: ease-in-out 0.5s;
@@ -500,8 +499,8 @@ section.my-work .section-heading {
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
-    color: #3689d6;
-    border-bottom: 2px solid #3689d6;
+    color: #a43f49;
+    border-bottom: 2px solid #a43f49;
 }
 
 .isotope-box {
@@ -569,10 +568,9 @@ figure.snip1321 figcaption {
   z-index: 1;
 }
 figure.snip1321 h4 {
-    font-size: 26px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.25px;
+    margin-top: 15px;
+  margin-bottom: 5px;
+  color: #232323;
 }
 figure.snip1321 span {
     font-size: 14px;
@@ -583,7 +581,7 @@ figure.snip1321 span {
 figure.snip1321 i {
   position: relative!important;
   font-size: 18px;
-  background-color: #3689d6;
+  background-color: #a43f49;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -592,7 +590,24 @@ figure.snip1321 i {
   border-radius: 5px;
   color: #fff;
 }
-
+figure.snip1321:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
 figure.snip1321 a {
   left: 0;
   right: 0;
