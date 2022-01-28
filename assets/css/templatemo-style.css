@@ -321,6 +321,15 @@ html {
 
 /* Buttons */
 
+.parent {
+    display: flex;
+    flex-direction:row;
+  }
+  
+  .column {
+    flex: 1 1 0px;
+    
+  }
 .white-button a {
     display: inline-block;
     padding: 12px 20px;
